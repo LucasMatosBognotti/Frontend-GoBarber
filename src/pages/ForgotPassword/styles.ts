@@ -12,9 +12,9 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   width: 100%;
   max-width: 500px;
@@ -33,9 +33,9 @@ const appearFromLeft = keyframes`
 
 export const AnimationContainer = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   animation: ${appearFromLeft} 1s;
 
@@ -79,7 +79,6 @@ export const AnimationContainer = styled.div`
       color: ${shade(0.2, '#FF9000')};
     }
   }
-
 `;
 
 export const Background = styled.div`
