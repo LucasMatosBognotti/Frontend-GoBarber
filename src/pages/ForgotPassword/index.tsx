@@ -63,7 +63,7 @@ const ForgotPassword: React.FC = () => {
       addToast({
         type: 'error',
         title: 'Error na autenticação',
-        description: 'Ocorreu um erro ao recuperar a senha, cheque o email',
+        description: 'Ocorreu um erro ao recuperar a senha, tente novamente',
       });
     } finally {
       setLoading(false);
