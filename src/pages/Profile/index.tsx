@@ -68,7 +68,7 @@ const Profile: React.FC = () => {
       }: {});
 
       await api.put('/users/profile', formData).then((response) => {
-        updateUser(response.data.user);
+        updateUser(response.data);
       });
 
       addToast({
@@ -101,7 +101,7 @@ const Profile: React.FC = () => {
       data.append('avatar', e.target.files[0]);
 
       api.patch('/users/avatar', data).then((response) => {
-        updateUser(response.data.user);
+        updateUser(response.data);
 
         addToast({
           type: 'success',
